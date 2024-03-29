@@ -1,3 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from glob import glob
+import time
+from tensorflow.keras import layers
+import time
+from tensorflow.keras.layers import Dense, Conv2D, Dropout, LeakyReLU, Flatten, Reshape, BatchNormalization, Conv2DTranspose, Input
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+
+from tqdm import tqdm
+
 '''
 This function builds a generator model
 Input: latent_dimension, which is the size of the input noise vector being put into the generator
@@ -5,7 +18,7 @@ Output: a model that takes in a noise vector and outputs a generated image
 '''
 
 def build_generator(latent_dimension):
-  xin = Input((latent_dimension))
+  xin = Input((latent_dimension),)
   xout = Dense(7*7*128, input_dim = latent_dimension)(xin) #map input noise to higher dimension
   xout = Reshape((7,7,128))(xout) #reshape so suitable for convolution
   xout = BatchNormalization()(xout) #normalizes
@@ -14,6 +27,7 @@ def build_generator(latent_dimension):
   xout = BatchNormalization()(xout)
   xout = LeakyReLU(alpha=0.2)(xout)
   xout = Conv2DTranspose(1, (4, 4), strides=(2, 2), padding='same', activation='sigmoid')(xout) #tanh provides higher res -1 -> 1 rather than 0 -> 1 and vals are centered @ 0 for other layers
+  
   return Model(xin,xout)
 
 '''
@@ -33,7 +47,7 @@ def build_discriminator():
     xout = Flatten()(xout)
     xout = Dense(1, activation='sigmoid')(xout) #sets vals 0-1 --> fake - real
 
-return Model(xin,xout)
+    return Model(xin,xout)
 
 '''
 Plot images function is used to plot images, such as the generated images from the generator
