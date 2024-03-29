@@ -93,8 +93,8 @@ def plot_metrics(list1,list1_title, list2, list2_title, downsample=False, ds_val
     plt.ylabel(y_title)
     plt.title(plot_title)
 
-    plt.plot(list1, label=list1_key)
-    plt.plot(list2, label=list2_key)
+    plt.plot(list1, label=list1_title)
+    plt.plot(list2, label=list2_title)
 
     plt.legend()
     plt.show()

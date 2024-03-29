@@ -21,6 +21,9 @@ def main():
   noise_dimension = 100
   epochs = 5
 
+  generator_learning_rate = 0.001
+  discriminator_learning_rate = 0.001
+
 
   (real_images, real_labels), (test_set,test_set_labels) = tf.keras.datasets.mnist.load_data()
 
@@ -57,8 +60,8 @@ def main():
 
   bce = tf.keras.losses.BinaryCrossentropy(from_logits=False)
 
-  gen_optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
-  disc_optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+  gen_optimizer = tf.keras.optimizers.Adam(learning_rate=generator_learning_rate)
+  disc_optimizer = tf.keras.optimizers.Adam(learning_rate=discriminator_learning_rate)
 
   @tf.function
   def train_step(images):

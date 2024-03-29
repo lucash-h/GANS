@@ -12,8 +12,14 @@ There is a function in functions.py that is used to plot generator and discrimin
 These are kept track of in the loss log dictionary, where loss is updated for every batch in every epoch
 while the accuracy is updated every epoch. 
 
-## Running the project
-### Downloading Dependencies - NOT WORKING
+## Running the Project in Google Colab
+1. Navigate to the `GAN.ipynb` file.
+2. Click on the "Open in Colab" button at the top of the file.
+3. Ensure that the runtime type is set to Python 3 by clicking on the "Runtime" menu, then "Change runtime type", and selecting "Python 3".
+4. if available, change Hardware accelerator to T4 GPU, or a different option as CPU is not fast
+5. Run the entire notebook by clicking on the "Runtime" menu and selecting "Run all". Alternatively, run each cell individually by clicking on the play button to the left of each cell.
+
+## Running the project (IDE) - NOT WORKING
 To run this project on your machine, it would be worth having an already set up IDE, otherwise using Colab would be easiest.
 Navigate to the directory where you want the project to be located using cd
 Within that directory, create a new folder for the project using mkdir project_folder_name
@@ -28,5 +34,3 @@ or pip install "specific dependency"
 To run the project type
 set PYTHONENCODING=utf-8 followed by python MyGan.py
 
-### Using Google Colab
-Google colab can be used to run it by copying the code, or clicking on "run from colab" directly from the file in this repo.
