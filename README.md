@@ -35,6 +35,6 @@ To run this project on your machine, it would be worth having an already set up 
 5. Run ```git clone https://github.com/lucash-h/MNIST_GAN```
 6. Navigate to cloned repo directory using ```cd MNIST_GAN```
 7. Check the dependencies needed using ```cat requirements.txt```
-8. Download all dependencies using ```pip install -r requirement.txt``` or download specific dependencuy using ```pip install [specific dependency]```
+8. Download all dependencies using ```pip install -r requirement.txt``` or download specific dependencuy using ```pip install specific dependency```
 9. In terminal run commands ```set PYTHONENCODING=utf-8``` followed by ```python GAN.py```
 
