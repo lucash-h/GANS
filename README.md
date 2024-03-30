@@ -3,9 +3,13 @@ This is an implementation of a general adversarial network in tensorflow, that u
 
 ## Generator
 This neural network uses several layers, including convolutions, to generate images ressembling the given dataset.
+![generator_image](https://github.com/lucash-h/MNIST_GAN/assets/93152056/acf40336-4210-412e-a8da-03a3b654a98a)
+
 
 ## Discriminator
 The discriminator neural network uses several layers to attempt to discern images created by the generator and images from the dataset
+![discriminator_image](https://github.com/lucash-h/MNIST_GAN/assets/93152056/6a4882ce-85e3-422a-aea0-1259a5acb8b7)
+
 
 ## Plotting metrics
 There is a function called plot_metric that is used to plot generator and discriminator loss, and accuracy.
