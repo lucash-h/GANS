@@ -28,13 +28,13 @@ These can be found near the beginning of the colab or IDE file to be easily chan
 
 ## Running the project (IDE) - NOT WORKING
 To run this project on your machine, it would be worth having an already set up IDE, otherwise using Colab would be easiest.
-1. Navigate to the directory where you want the project to be located using '''cd directory_name'''
-2. Within that directory, create a new folder for the project using '''mkdir project_folder_name'''
-3. Navigate to the new folder using '''cd project_folder_name'''
-4. Initialize a git repo using '''git init'''
-5. Run '''git clone https://github.com/lucash-h/MNIST_GAN'''
-6. Navigate to cloned repo directory using '''cd MNIST_GAN'''
-7. Check the dependencies needed using '''cat requirements.txt'''
-8. Download all dependencies using '''pip install -r requirement.txt''' or download specific dependencuy using '''pip install [specific dependency]'''
-9. In terminal run commands '''set PYTHONENCODING=utf-8''' followed by '''python GAN.py'''
+1. Navigate to the directory where you want the project to be located using ```cd directory_name```
+2. Within that directory, create a new folder for the project using ```mkdir project_folder_name```
+3. Navigate to the new folder using ```cd project_folder_name```
+4. Initialize a git repo using ```git init```
+5. Run ```git clone https://github.com/lucash-h/MNIST_GAN```
+6. Navigate to cloned repo directory using ```cd MNIST_GAN```
+7. Check the dependencies needed using ```cat requirements.txt```
+8. Download all dependencies using ```pip install -r requirement.txt``` or download specific dependencuy using ```pip install [specific dependency]```
+9. In terminal run commands ```set PYTHONENCODING=utf-8``` followed by ```python GAN.py```
 
