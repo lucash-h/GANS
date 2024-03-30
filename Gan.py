@@ -17,7 +17,6 @@ def main():
 
   '''All the declared parameters of this program '''
   batch_size = 32
-  latent_dimension = 100
   noise_dimension = 100
   epochs = 5
 
@@ -37,7 +36,7 @@ def main():
   test_set = test_set / 255.0
 
 
-  generator = build_generator(latent_dimension,)
+  generator = build_generator(noise_dimension,)
   #generator.compile(optimizer='Adam', loss = 'bce')
 
   discriminator = build_discriminator()

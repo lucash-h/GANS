@@ -16,8 +16,8 @@ while the accuracy is updated every epoch.
 These can be found near the beginning of the colab or IDE file to be easily changed
 *batch size is the number of images in a batch
 *epochs is the number of training iterations the model goes through
-*latent dimension is the dimension of the random noise vector that is the input for the generator
-*noise dimension
+*noise dimension is the dimensions of the random noise vector that is input for the generator. This also refers to the dimension of the generator input.
+*learning rate of discriminator/generator refers to the step size at which model parameters are updated during optimization. In other words, it controls the rate at which the model learns.
 
 ## Running the Project in Google Colab
 1. Navigate to the `GAN.ipynb` file.
