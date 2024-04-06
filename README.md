@@ -55,6 +55,10 @@ To mitigate this, the MGGAN implements an additional encoder, which compresses t
 
 Meanwhile, the generated image is also passed through a standard, *pixel* discriminator which plays a part in the generator loss, along with the latent discriminator loss.
 
+![image](https://github.com/lucash-h/GANS/assets/93152056/0bbc7764-8223-43da-af1b-bcdcc90a2563)
+This drawing gives a better visualization of the dimensions and basic structure of this type of GAN.
+
+
 
 ### More on this to come 
 
